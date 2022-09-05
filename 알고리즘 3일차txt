@@ -1,0 +1,214 @@
+1059 ~연산자(비트 not 연산자)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 정수 입력
+        System.out.println(~a);
+    }
+}
+1060  &  (AND 연산자)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번째 정수 입력
+        int b =sc.nextInt(); // 1번째 정수 입력
+        System.out.println(a&b);
+    }
+}
+1061  |연산자(or 연산자)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        int b =sc.nextInt(); // 2번쨰 정수 입력
+        System.out.println(a|b);
+
+    }
+}
+
+1062 ^ 연산자(XOR 연산자)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        int b =sc.nextInt(); // 2번쨰 정수 입력
+        System.out.println(a^b);
+
+    }
+}
+
+1063 3항 연산자 ? (a>b ? a:b) a b 값 2 중 큰 값을 출력
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        int b =sc.nextInt(); // 2번쨰 정수 입력
+        System.out.println(a>b?a:b);
+
+    }
+}
+
+1064 3항 연산자 ? 3값 비교 중 큰 값을 출력
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        int b =sc.nextInt(); // 2번쨰 정수 입력
+        int c =sc.nextInt(); // 3번쨰 정수 입력
+        System.out.println((a<b?a:b)<c?(a<b?a:b):c);
+
+    }
+}
+
+1065 if문 기초 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        int b =sc.nextInt(); // 2번쨰 정수 입력
+        int c =sc.nextInt(); // 3번쨰 정수 입력
+        if(a%2==0) System.out.println(a);
+        if(b%2==0) System.out.println(b);
+        if(c%2==0) System.out.println(c);
+
+    }
+}
+
+1066 if 문 기초 2
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        int b =sc.nextInt(); // 2번쨰 정수 입력
+        int c =sc.nextInt(); // 3번쨰 정수 입력
+        if(a%2==0) System.out.println("even");else System.out.println("odd");
+        if(b%2==0) System.out.println("even");else System.out.println("odd");
+        if(c%2==0) System.out.println("even");else System.out.println("odd");
+
+    }
+}
+
+1067 if문 기초 3
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        
+        if(a>=0) {
+            if(a%2==0) System.out.println("plus\neven");
+            else System.out.println("plus\nodd");
+        }
+        else {
+            if(a%2==0) System.out.println("minus\neven");
+            else System.out.println("minus\nodd");
+        }
+
+    }
+}
+
+1068 if문 기초 4
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        
+        if(a>=90&&a<=100) {
+            System.out.println("A");
+        }
+        else if(a>=70&&a<90) {
+            System.out.println("B");
+        }
+        else if(a>=40&&a<80) {
+            System.out.println("C");
+        }
+        else if(a>=0&&a<40) {
+            System.out.println("D");
+        }
+
+    }
+}
+
+1069 if문 기초 5 case문
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        String str =sc.next(); // 1번쨰 문자 입력
+        char word=str.charAt(0);
+        switch (word){
+            case 'A': System.out.println("best!!!"); break;
+            case 'B': System.out.println("good!!"); break;
+            case 'C': System.out.println("run!"); break;
+            case 'D': System.out.println("slowly~"); break;
+            default: System.out.println("what?"); break;
+        }
+
+    }
+}
+
+1070 case문의 중복 사용
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int str =sc.nextInt(); // 1번쨰 정수 입력
+
+        switch (str){
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("winter"); break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("spring"); break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("summer"); break;
+            default:
+                System.out.println("fall"); break;
+        }
+
+    }
+}
+1071
+1088
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 정수 입력
+        int result=0;
+        for (int i=0; i<=a; i++){
+            if(i%3==0) continue;
+            System.out.print(i+" ");
+
+        }
+
+    }
+}
+
