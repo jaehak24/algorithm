@@ -1,7 +1,67 @@
+import java.io.*;
 import java.util.Scanner;
+import java.util.StringTokenizer;
+
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args)throws Exception{
+        //빠른 A+B 출력
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int num=Integer.parseInt(br.readLine());
+
+        StringTokenizer st;
+
+        for (int i=0;i<num;i++){
+            st=new StringTokenizer(br.readLine()," ");
+            bw.write((Integer.parseInt(st.nextToken())+Integer.parseInt(st.nextToken()))+"\n");
+        }
+        br.close();
+        bw.flush();
+        bw.close();
+
+
+        /*Java 합 8393
+        Scanner sc=new Scanner(System.in);
+        int goal= sc.nextInt();
+        int sum=0;
+        for (int i=0;i<=goal;i++){
+            sum+=i;
+        }
+        System.out.println(sum);
+         */
+
+
+
+        /*Java a+B
+        Scanner sc=new Scanner(System.in);
+        int count=sc.nextInt();
+        int i=0;
+        while (i<count){
+            int num1=sc.nextInt();
+            int num2=sc.nextInt();
+            System.out.println(num2+num1);
+            i++;
+        }*/
+
+
+
+
+
+
+        /*구구단 백준 2739번 문제
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int num=br.read()-'0';
+        for(int i=1;i<10;i++){
+            bw.write(String.format("%d * %d = %d\n",num,i,num*i));
+        }
+        bw.flush();
+
+         */
+
         /*주사위 세개
         Scanner sc=new Scanner(System.in);
         int A=sc.nextInt();
