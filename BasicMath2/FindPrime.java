@@ -18,7 +18,7 @@ public class FindPrime {
         get_prime();
 
 
-        for (int i=M;i<N;i++){
+        for (int i=M;i<=N;i++){
             if(!Prime[i]) System.out.println(i);
 
         }

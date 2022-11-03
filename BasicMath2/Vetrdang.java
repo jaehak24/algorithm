@@ -14,10 +14,10 @@ public class Vetrdang {
         while (true){
             int num=Integer.parseInt(br.readLine());
             int count=0;
-            Prime=new boolean[2*num+2];
+            Prime=new boolean[2*num+1];
             get_prime();
 
-            for (int i=num;i<2*num+1;i++){
+            for (int i=num+1;i<=2*num;i++){
                 if(!Prime[i]) count++;
 
             }
