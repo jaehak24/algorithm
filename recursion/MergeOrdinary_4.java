@@ -24,7 +24,8 @@ public class MergeOrdinary_4 {
             A[i]=Integer.parseInt(nums[i]);
         }
         merge_sort(A,0,A.length-1);
-        System.out.println(result);
+        if(K>count)System.out.println(result);
+        else System.out.println(-1);
 
     }
 
