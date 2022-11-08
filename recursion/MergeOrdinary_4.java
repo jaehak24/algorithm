@@ -8,6 +8,7 @@ public class MergeOrdinary_4 {
     static int count=0;
     static int K;
     static int result=-1;
+    static int[] tmp;
     public static void main(String[] args) throws IOException {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 
@@ -23,9 +24,10 @@ public class MergeOrdinary_4 {
         for (int i=0;i<A.length;i++){
             A[i]=Integer.parseInt(nums[i]);
         }
+        tmp=new int[Integer.parseInt(num[0])];
         merge_sort(A,0,A.length-1);
-        if(K>count)System.out.println(result);
-        else System.out.println(-1);
+        System.out.println(result);
+
 
     }
 
@@ -46,7 +48,7 @@ public class MergeOrdinary_4 {
     }
 
     public static void merge(int[] A,int start,int mid,int end){
-        int[] tmp=new int[A.length];
+
         int i=start,j=mid+1,t=0;
         while (i<=mid&&j<=end){
             if(A[i]<=mid&&mid<=A[j]){
