@@ -9,8 +9,8 @@ import java.util.StringTokenizer;
 
 public class count_receiver {
 
-    public static int MAX;
-    public static int MIN;
+    public static int MAX=Integer.MAX_VALUE;
+    public static int MIN=Integer.MIN_VALUE;
     public static int[] operator=new int[4];//연산자
     public static int[] number;
     public static int N;
