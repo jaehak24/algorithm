@@ -1,0 +1,552 @@
+1059 ~연산자(비트 not 연산자)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 정수 입력
+        System.out.println(~a);
+    }
+}
+1060  &  (AND 연산자)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번째 정수 입력
+        int b =sc.nextInt(); // 1번째 정수 입력
+        System.out.println(a&b);
+    }
+}
+1061  |연산자(or 연산자)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        int b =sc.nextInt(); // 2번쨰 정수 입력
+        System.out.println(a|b);
+
+    }
+}
+
+1062 ^ 연산자(XOR 연산자)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        int b =sc.nextInt(); // 2번쨰 정수 입력
+        System.out.println(a^b);
+
+    }
+}
+
+1063 3항 연산자 ? (a>b ? a:b) a b 값 2 중 큰 값을 출력
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        int b =sc.nextInt(); // 2번쨰 정수 입력
+        System.out.println(a>b?a:b);
+
+    }
+}
+
+1064 3항 연산자 ? 3값 비교 중 큰 값을 출력
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        int b =sc.nextInt(); // 2번쨰 정수 입력
+        int c =sc.nextInt(); // 3번쨰 정수 입력
+        System.out.println((a<b?a:b)<c?(a<b?a:b):c);
+
+    }
+}
+
+1065 if문 기초 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        int b =sc.nextInt(); // 2번쨰 정수 입력
+        int c =sc.nextInt(); // 3번쨰 정수 입력
+        if(a%2==0) System.out.println(a);
+        if(b%2==0) System.out.println(b);
+        if(c%2==0) System.out.println(c);
+
+    }
+}
+
+1066 if 문 기초 2
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        int b =sc.nextInt(); // 2번쨰 정수 입력
+        int c =sc.nextInt(); // 3번쨰 정수 입력
+        if(a%2==0) System.out.println("even");else System.out.println("odd");
+        if(b%2==0) System.out.println("even");else System.out.println("odd");
+        if(c%2==0) System.out.println("even");else System.out.println("odd");
+
+    }
+}
+
+1067 if문 기초 3
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        
+        if(a>=0) {
+            if(a%2==0) System.out.println("plus\neven");
+            else System.out.println("plus\nodd");
+        }
+        else {
+            if(a%2==0) System.out.println("minus\neven");
+            else System.out.println("minus\nodd");
+        }
+
+    }
+}
+
+1068 if문 기초 4
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 1번쨰 정수 입력
+        
+        if(a>=90&&a<=100) {
+            System.out.println("A");
+        }
+        else if(a>=70&&a<90) {
+            System.out.println("B");
+        }
+        else if(a>=40&&a<80) {
+            System.out.println("C");
+        }
+        else if(a>=0&&a<40) {
+            System.out.println("D");
+        }
+
+    }
+}
+
+1069 if문 기초 5 case문
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String str =sc.next(); // 1번쨰 문자 입력
+        char word=str.charAt(0);
+        switch (word){
+            case 'A': System.out.println("best!!!"); break;
+            case 'B': System.out.println("good!!"); break;
+            case 'C': System.out.println("run!"); break;
+            case 'D': System.out.println("slowly~"); break;
+            default: System.out.println("what?"); break;
+        }
+
+    }
+}
+
+1070 case문의 중복 사용
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int str =sc.nextInt(); // 1번쨰 정수 입력
+
+        switch (str){
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("winter"); break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("spring"); break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("summer"); break;
+            default:
+                System.out.println("fall"); break;
+        }
+
+    }
+}
+
+1071 while문 기초
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        
+
+        while (true){
+            int num=sc.nextInt(); // 정수 입력 반복
+            
+            if(num==0) break;
+            System.out.println(num);
+        }
+
+    }
+}
+
+1072 while문 기초 2
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt(); // 첫 번쨰 정수 입력 반복
+        int count=0;
+        while (count<num){
+            int num2=sc.nextInt();
+            System.out.println(num2);
+            count++;
+        }
+
+    }
+}
+
+1073 while문 기초 3
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+
+        while (true){
+            int num2=sc.nextInt();
+
+            if(num2==0) break;
+
+            System.out.println(num2);//0은 출력되지 않으므로
+
+        }
+
+    }
+}
+
+1074 while문 기초 4 카운트 다운
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int num2=sc.nextInt();
+        int result=num2;
+
+        while (result>0){
+            System.out.println(result);//0은 출력되지 않으므로
+            result--;
+        }
+
+    }
+}
+
+1075 while문 기초 5 카운트 다운 2
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int num2=sc.nextInt();
+        int result=num2-1;
+
+        while (result>=0){
+            System.out.println(result);//0은 출력되지 않으므로
+            result--;
+        }
+
+    }
+}
+
+1076 while문과 아스키 코드값을 이용한 char 문자 카운트 다운
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String str=sc.next(); // 문자열 입력
+        char lim=str.charAt(0); // 문자열 변환
+        int result=(int)'a';
+
+        while (result<=(int)lim){ //아스키코드 값으로
+            System.out.print((char)result+" ");//0은 출력되지 않으므로
+            result++;
+        }
+
+    }
+}
+
+1077 while문을 향한 오름차순
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int num2=sc.nextInt();
+        int result=0;
+
+        while (result<=num2){
+            System.out.println(result);//0은 출력되지 않으므로
+            result++;
+        }
+
+    }
+}
+
+1078  반복문을 활용한 짝수의 합 구하기
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int num2=sc.nextInt();
+        int result=0;//짝수의 합을 받을 변수
+
+        for (int i=0;i<=num2;i++){
+            if(i%2==0)result+=i;
+        }
+        System.out.println(result);
+
+    }
+}
+
+1079 원하는 문자를 출력할 때까지 입력받기
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        while (true){
+            BaekJoon.String src=sc.next();
+            char word=src.charAt(0); //문자열 입력
+            System.out.println(word);
+            if (word=='q') break;
+        }
+
+
+    }
+}
+
+1080 등차수열의 합 입력으로 index 구하기
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt(); // 합 입력
+        int cnt=0;
+        int result=0;
+        while (true){
+            result+=cnt;
+            if (result>=num) {System.out.println(cnt); break;}
+            cnt+=1;
+        }
+
+
+    }
+}
+
+1081 2중 for문 기초 1 2개의 주사위 면의 경우의 수
+import java.util.Scanner;
+
+public class main {
+    public static void main(BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num1=sc.nextInt(); // 첫 번째 주사위 면의 개수
+        int num2=sc.nextInt(); // 두 번째 주사위 면의 개수
+        for (int i=1;i<=num1;i++){
+            for (int j=1;j<=num2;j++){
+                System.out.println(i+" "+j);
+            }
+        }
+
+
+    }
+}
+
+1082 16진수 구구단
+import java.util.Scanner;
+
+public class main {
+    public static void main(BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String str=sc.next(); // 첫 번째 정수 입력
+        int num=str.charAt(0)-'0'-7; // 문자열로 입력 받음. 대문자로 입력받기 때문에 7을 더 빼줌
+        
+        for (int i=1;i<16;i++){
+            System.out.println(BaekJoon.String.format("%X*%X=%X",num,i,num*i));//8진수 %O %X
+        }
+
+
+    }
+}
+
+1083 구구단 삼육구
+import java.util.Scanner;
+
+public class main {
+    public static void main(BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt(); // 첫 번째 정수 입력
+
+
+        for (int i=1;i<=num;i++){
+            if (i%3==0) System.out.print("X"+" ");
+            else System.out.print(i+" ");
+
+        }
+
+
+    }
+}
+
+1084 rgb 컬러+buffer 사용 출력
+import java.io.*;
+import java.io.OutputStreamWriter;
+
+public class main {
+    public static void main(BaekJoon.String[] args) throws IOException {
+        
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));//입력 스트림
+        BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));//입력 스트림
+        BaekJoon.String[] str=br.readLine().split(" ");
+        int count=0; // 종류의 수를 셀 변수
+
+
+        for (int i=0;i<Integer.valueOf(str[0]);i++){
+            for (int j=0; j<Integer.valueOf(str[1]);j++){
+                for (int k=0; k<Integer.valueOf(str[2]);k++){
+                    bw.write(i+" "+j+" "+k+”\n”);
+                    count++;
+                }
+            }
+        }
+        bw.write(BaekJoon.String.valueOf(count));
+        bw.flush();
+        
+
+
+    }
+}
+
+1085 소수점 출력(실수 값 출력을 위해선 double double 연산을 해야함)
+import java.io.*;
+import java.io.OutputStreamWriter;
+
+public class main {
+    public static void main(BaekJoon.String[] args) throws IOException {
+
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));//입력 스트림에서 버퍼 호출
+        BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));//출력 스트림
+        BaekJoon.String[] str=br.readLine().split(" ");// 버퍼 인스턴스에서 문자열을 받음
+
+        double num1=Integer.valueOf(str[0]);
+        double num2=Integer.valueOf(str[1]);
+        double num3=Integer.valueOf(str[2]);
+        double num4=Integer.valueOf(str[3]);
+
+        double result=(num1*num3*num4*num2)/8/1024/1024;
+        //1000으로 나누는게 아니라 1024로 나누는게 관권인 문제
+        bw.write(BaekJoon.String.format("%.1f MB",result));
+        bw.flush();
+
+
+
+    }
+}
+
+1086 필요 용량 구하기
+import java.io.*;
+import java.io.OutputStreamWriter;
+
+public class main {
+    public static void main(BaekJoon.String[] args) throws IOException {
+
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));//입력 스트림에서 버퍼 호출
+        BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));//출력 스트림
+        BaekJoon.String[] str=br.readLine().split(" ");// 버퍼 인스턴스에서 문자열을 받음
+
+        double num1=Integer.valueOf(str[0]);
+        double num2=Integer.valueOf(str[1]);
+        double num3=Integer.valueOf(str[2]);
+
+        double result=(num1*num3*num2)/8/1024/1024; // MB 출력
+        //1000으로 나누는게 아니라 1024로 나누는게 관권인 문제
+        bw.write(BaekJoon.String.format("%.2f MB",result));
+        bw.flush();
+
+
+
+    }
+}
+
+1087 합 while 조건문
+import java.io.*;
+import java.io.OutputStreamWriter;
+
+public class main {
+    public static void main(BaekJoon.String[] args) throws IOException {
+
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));//입력 스트림에서 버퍼 호출
+        BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));//출력 스트림
+        BaekJoon.String str=br.readLine();
+
+        int num=Integer.valueOf(str);
+        int count=1;
+        int result=0;
+        while (true){
+            result+=count;
+            if(result>=num) break;
+            count++;
+        }
+
+        bw.write(BaekJoon.String.format("%d",result));
+        bw.flush();
+
+
+
+    }
+}
+
+1088
+import java.util.Scanner;
+
+public class Main {
+    public static void main(BaekJoon.String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int a =sc.nextInt(); // 정수 입력
+        int result=0;
+        for (int i=0; i<=a; i++){
+            if(i%3==0) continue;
+            System.out.print(i+" ");
+
+        }
+
+    }
+}
+

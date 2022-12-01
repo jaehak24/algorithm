@@ -55,7 +55,7 @@ public class Main {
 
         int num=br.read()-'0';
         for(int i=1;i<10;i++){
-            bw.write(String.format("%d * %d = %d\n",num,i,num*i));
+            bw.write(BaekJoon.String.format("%d * %d = %d\n",num,i,num*i));
         }
         bw.flush();
 
@@ -135,7 +135,7 @@ public class Main {
         //크기 비교
         /*BufferedReader br=new BufferedReader(new InputStreamReader(System.in));//입력 스트림
         BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(System.out));//출력 스트림
-        String[] numbers= br.readLine().split(" ");
+        BaekJoon.String[] numbers= br.readLine().split(" ");
         int num1=Integer.valueOf(numbers[0]);
         int num2=Integer.valueOf(numbers[1]);
 

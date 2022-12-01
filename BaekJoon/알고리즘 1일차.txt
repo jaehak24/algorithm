@@ -1,0 +1,419 @@
+
+1001
+public class Main{
+    public static void main(BaekJoon.String[] args) {
+        System.out.println(("Hello"));
+    }
+}
+
+1002
+public class Main{
+    public static void main(BaekJoon.String[] args) {
+        System.out.println(("Hello World"));
+    }
+}
+
+1003
+
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        System.out.print("Hello\nWorld");
+    }
+}
+
+1004
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        System.out.print("\'Hello\'");
+    }
+}
+
+1005
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        System.out.print("\"Hello World\"");
+    }
+}
+
+1006
+
+public class Main{
+    public static void main(BaekJoon.String args[]){
+        System.out.println("\"!@#$%^&*()\"");
+    }
+}
+
+1007
+public class Main{
+    public static void main(BaekJoon.String args[] ){
+        System.out.println("\"C:\\Download\\hello.cpp\"");
+    }
+}
+1008
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        System.out.println("\u250c\u252c\u2510");
+        System.out.println("\u251c\u253c\u2524");
+        System.out.println("\u2514\u2534\u2518");
+    }
+}
+
+1010
+Library java.IOException
+System.in,read() 문자 하나만 입력 가능
+Scanner->문자열 입력 가능
+import java.util.Scanner;
+
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        Scanner sc=new Scanner(System.in);//scanner 오브젝트 생성 후 System.in 스트림으로 입력
+        int num=sc.nextInt();
+        System.out.println(num);
+    }
+}
+
+1011
+import java.util.Scanner;
+
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        
+        Scanner sc=new Scanner(System.in);
+        char word=sc.next().charAt(0);
+        System.out.print(word);
+        
+    }
+}
+
+1011-1
+import java.util.Scanner;
+
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        
+        Scanner sc=new Scanner(System.in);
+        char word=sc.next().charAt(0);
+        System.out.print(word);
+        
+    }
+}
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String s=sc.next();//다음 입력 스트림을 받음
+        char word=s.charAt(0);
+        System.out.print(word);
+        
+    }
+}
+
+1012
+import java.util.Scanner;
+
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        Scanner sc=new Scanner(System.in);
+        float num=sc.nextFloat();
+        BaekJoon.String s=BaekJoon.String.format("%.6f",num);
+        System.out.println(s);
+        
+    }
+}
+
+1013
+import java.util.Scanner;
+
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        int a,b;
+        Scanner sc=new Scanner(System.in);
+        a=sc.nextInt();
+        b=sc.nextInt();
+        
+        System.out.println(a+" "+b);
+        
+    }
+}
+
+1014 문제
+
+풀이 1
+import java.util.Scanner;
+
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        char a,b;
+        Scanner sc=new Scanner(System.in);
+        a=sc.charAt(0);
+        b=sc.charAt(2);
+        
+        System.out.println(b+" "+a);
+        
+    }
+}
+
+풀이 2
+import java.util.Scanner;
+
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        char a,b;
+        Scanner sc=new Scanner(System.in);
+        a=sc.next().charAt(0);
+        b=sc.next().charAt(0);
+        
+        System.out.println(b+" "+a);
+        
+    }
+} 
+
+1015
+import java.util.Scanner;
+
+public class Main{
+    public static void main (BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        float num;
+        
+        num=sc.nextFloat();
+        System.out.println(BaekJoon.String.format("%.2f",num));
+        
+    }
+}
+
+1017
+import java.util.Scanner;
+
+public class Main{
+    public static void main (BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        System.out.println(BaekJoon.String.format("%d %d %d", a,a,a));
+    }
+}
+
+1018
+import java.util.Scanner;
+
+public class Main{
+    public static void main (BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String s=sc.next();
+        System.out.println(s);
+    }
+}
+
+1019.
+풀이 1
+import java.util.Scanner;
+
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String s=sc.next();
+        BaekJoon.String[] arr=s.split("\\.");
+        int year=Integer.valueOf(arr[0]);
+        int month=Integer.valueOf(arr[1]);
+        int day=Integer.valueOf(arr[2]);
+        
+        System.out.print(BaekJoon.String.format("%04d",year)+"."+BaekJoon.String.format("%02d",month)+"."+BaekJoon.String.format("%02d",day));
+        
+    }
+}
+
+풀이 2
+import java.util.Scanner;
+
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String s=sc.next();
+        BaekJoon.String[] arr=s.split("\\.");
+        int year=Integer.valueOf(arr[0]);
+        int month=Integer.valueOf(arr[1]);
+        int day=Integer.valueOf(arr[2]);
+        
+        System.out.print(BaekJoon.String.format("%04d.%02d.%02d",year,month,day));
+        
+    }
+}
+
+1020
+import java.util.Scanner;
+
+public class Main{
+    public static void main (BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String s=sc.next(); // 문자열 입력 받고
+        BaekJoon.String[] arr=s.split("\\-"); //문자열 배열 선언+ (-로 나누기)
+        BaekJoon.String s1=arr[0];
+        BaekJoon.String s2=arr[1];
+        
+        System.out.println(BaekJoon.String.format("%s%s",s1,s2));
+        
+        
+    }
+}
+
+1021
+import java.util.Scanner;
+
+public class Main{
+    public static void main (BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String a=sc.next();
+        
+        System.out.println(a);
+    }
+}
+
+1022.
+import java.util.Scanner;
+
+public class Main{
+    public static void main (BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String a=sc.nextLine(); //입력 콘솔의 한 줄을 불러오는 메소드
+        
+        System.out.println(a);
+    }
+}
+
+풀이 2
+import java.util.Scanner;
+
+public class Main{
+    public static void main (BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String str=sc.nextLine(); //입력 콘솔의 한 줄을 불러오는 메소드
+        
+        if(str.length()>=2000) // 2000 초과 시
+        {
+            str=str.substring(0,2000);//substring(int1,int2)int1에서 int2까지 문자까지만 출력하게 해주는 메소드)
+        }
+        
+        System.out.println(str);
+    }
+}
+
+1023
+import java.util.Scanner;
+
+public class Main{
+    public static void main (BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String s=sc.next();
+        BaekJoon.String[] arr=s.split("\\.");
+        BaekJoon.String s1=arr[0] ;
+        BaekJoon.String s2=arr[1] ;
+        System.out.print(s1+"\n"+s2);
+        
+    }
+}
+
+1024번 문제
+import java.util.Scanner;
+
+public class Main{
+    public static void main (BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String s=sc.next();
+        int len=s.length(); //.lenth() String의 길이를 정수형으로 출력
+        BaekJoon.String[] arr=s.split("");
+        for (int i=0;i<len;i++){
+            System.out.println("\'"+arr[i]+"\'");
+        } 
+        
+    }
+}
+
+1025번 문제
+import java.util.Scanner;
+
+public class Main{
+    public static void main (BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String str=sc.next(); // 입력 스트림 문자열에 저장
+        char[] arr=str.toCharArray(); //문자열을 문자 배열로 변경
+        for (int i=0;i<arr.length;i++){
+            System.out.print("["+arr[i]);
+            for (int j=arr.length-1 ;j>i;j-- ){
+                System.out.print("0");
+            } 
+            
+            System.out.println("]");
+        } 
+        
+        
+    }
+}
+
+
+1026번 문제
+import java.util.Scanner;
+
+public class Main{
+    public static void main (BaekJoon.String[] args) {
+        Scanner sc=new Scanner(System.in);
+        BaekJoon.String a=sc.next();
+        BaekJoon.String[] arr=a.split("\\:");
+        int min=Integer.parseInt(arr[1]);
+        
+        System.out.println(min);
+    }
+}
+
+1027번 문제
+import java.util.Scanner;
+
+public class Main {
+  public static void main(BaekJoon.String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+    BaekJoon.String str = sc.next();
+    BaekJoon.String arr[]=str.split("[.]");
+
+    System.out.println(arr[2] + '-' + arr[1] + '-' + arr[0]);
+  }
+}
+
+
+1028번 문제
+import java.util.Scanner;
+
+public class Main {
+    public static void main (BaekJoon.String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        long data=sc.nextLong(); //기본 범위 이상의 값을 입력스트림을 받을 때
+        System.out.println(data);
+    }
+}
+
+1029번 문제
+import java.util.Scanner;
+
+public class Main {
+    public static void main (BaekJoon.String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        double data=sc.nextDouble(); //기본 범위 이상의 실수 값을 입력스트림을 받을 때
+        System.out.println(BaekJoon.String.format("%.11f",data));
+    }
+}
+
+1030번 문제
+import java.util.Scanner;
+
+public class Main{
+    public static void main(BaekJoon.String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        long data=sc.nextLong();
+        System.out.println(data);
+    }
+}
